@@ -1,0 +1,205 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-image: url(../images/diagmonds.png); 
+  background-repeat: repeat;
+	color:#fff;
+}
+.JumbotronPara div{
+	margin-top:-2.5%;
+	z-index: -1;
+	height: 100%;
+}
+
+.objectivePara p{
+	padding-top:0.1%;
+}
+.contact-header-space{
+	padding-top: 10%;
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	p.for-phone-alignment,p.for-copyright-alignment{
+		text-align: center;
+	}
+	body {
+  /* Margin bottom by footer height */
+  margin-bottom: 80px;
+	}
+	footer{
+		/* Set the fixed height of the footer here */
+  height: 80px;
+	}
+}
+/* others */
+@media (min-width: 768px) {
+p.for-phone-alignment{
+		text-align: left;
+	}
+p.for-copyright-alignment{
+		text-align: right;
+	}
+	body {
+  /* Margin bottom by footer height */
+  margin-bottom: 40px;
+	}
+	footer{
+		/* Set the fixed height of the footer here */
+  height: 40px;
+	}
+}
+
+.skillsHeader{
+	padding-bottom: 2%;
+}
+.skillsHeader{
+	color: #fff;
+}
+h2 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	color: darkcyan;
+}
+h5{
+	color:#086161;
+}
+.jumbotron { 
+background-image: url(../images/weather.png); 
+background-repeat: repeat;
+}
+.AboutMe{
+	background: url(../images/weather.png) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+line-height: 13.2px;
+}
+
+#skillsPage{
+	background-image: url(../images/dark_scales.png); 
+	background-repeat: repeat; 
+}
+.forphone.col-xs-12{
+	margin-bottom: 2%;
+}
+
+#AcademicsPage{
+	background-image: url(../images/school.png);
+	background-repeat: repeat; 
+}
+#ExperiencePage{
+	background-image: url(../images/school.png);
+	background-repeat: repeat; 
+}
+#underconstruction{
+    color: white;
+    text-shadow: 1px 1px 2px  #222222, 0 0 25px #e9ddc6, 0 0 5px #b3790b;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+     background: -webkit-linear-gradient( #d8c299,#e9ddc6, #d2b277); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d8c299,#e9ddc6, #d2b277); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d8c299,#e9ddc6, #d2b277); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d8c299,#e9ddc6, #d2b277); /* Standard syntax (must be last) */
+}
+
+#underconstruction:hover {
+	 background: -webkit-linear-gradient( #bb851f,#d4b782, #d09831); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#bb851f,#d4b782, #d09831); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#bb851f,#d4b782, #d09831); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#bb851f,#d4b782, #d09831); /* Standard syntax (must be last) */
+}
+/*Academics*/
+@media (min-width: 768px) {
+.parallax1 {
+    /* The image used */
+    background-image: url('../images/mainbuildingclear.png');
+
+    /* Full height */
+    height: 200px;
+    width:100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.parallax2 {
+    /* The image used */
+    background-image: url('../images/schoolbuilding.png');
+
+    /* Full height */
+    height: 200px;
+    width:100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+}
+@media (max-width: 767px) {
+	.parallax1 {
+    /* The image used */
+    background-image: url('../images/mainbuildingclear.png');
+
+    /* Full height */
+    height: 200px;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.parallax2 {
+    /* The image used */
+    background-image: url('../images/schoolbuilding.png');
+
+    /* Full height */
+    height: 200px;
+    background-size: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+}
+}
+.hideDiv{
+	display: none;
+	}
+#collegeInfo p,#schoolInfo p{
+	margin: 0 0 0 0;
+}
+#collegeInfo p:nth-child(3){
+	    color: #2d6079;
+}
+#collegeInfo p:nth-child(2){
+	    color: #0b3d56;
+}
+#collegeInfo p:nth-child(1){
+	    color: #022237;
+}
+#schoolInfo p:nth-child(1){
+	    color: #2d6079;
+}
+#schoolInfo p:nth-child(2){
+	    color: #0b3d56;
+}
+#schoolInfo p:nth-child(3){
+	    color: #022237;
+}
+#schoolInfo p:nth-child(4){
+	    color: #01151f;
+}
+#InterestsPage p.description{
+	color:#2f6375;;
+}
+#nav_up,#nav_down {
+      color: #f3eddd;
+    background-color: #e2c794;
+    border-color: #815808;
+}
