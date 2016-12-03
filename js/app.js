@@ -152,6 +152,12 @@
 
 	];
 
+	app.directive('navigationDiv', function(){
+		return{
+			restrict: 'E',
+			templateUrl: 'navigation-div.html'
+		};
+	});
 	app.directive('footerDiv', function(){
 		return{
 			restrict: 'E',

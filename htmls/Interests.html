@@ -8,28 +8,9 @@
 	  	<link rel="stylesheet" href="../css/index.css" type="text/css">
 	 	<link rel="stylesheet" href="../css/slideshow/colorbox.css" type="text/css">
 	</head>
-	<body id="InterestsPage" >
-		<nav class="navbar navbar-inverse">
-		  <div class="container-fluid">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span> 
-		      </button>
-		      <a class="navbar-brand" href="#">Shivangi</a>
-		    </div>
-		    <div class="collapse navbar-collapse" id="myNavbar">
-		      <ul class="nav navbar-nav">
-		        <li><a href="index.html">Home</a></li>
-		        <li><a href="Experience.html">Experience</a></li>
-		        <li><a href="Skills.html">Skills</a></li> 
-		        <li><a href="Academics.html">Academics</a></li>
-		        <li  class="active"><a href="Interests.html">Interests</a></li> 
-		      </ul>
-		    </div>
-		  </div>
-		</nav>
+	<body class="InterestsPage" >
+		<navigation-div>
+		</navigation-div>
 		
 		<div class="container-fluid" ng-controller="StoreInterests as interest">
 		<div class="row"  >
@@ -55,7 +36,8 @@
 				<p class="description">{{interest.skill[0].description1}}</p>
 				<p ng-show="interest.skill[0].showLevel">{{interest.skill[0].level}}</p>
 				<a href="{{interest.skill[0].images[1].full}}" class="gallery">
-				<img ng-src="{{interest.skill[0].images[0].full}}" class="img-responsive img-thumbnail"/>
+				<img id="book1image" ng-src="{{interest.skill[0].images[0].full}}" class="img-responsive img-thumbnail" />
+				
 				</a>
 				<a href="{{interest.skill[0].images[2].full}}" class="gallery">
 				<!-- <img ng-src="{{interest.skill[0].images[1].full}}" class="img-responsive img-thumbnail"/> -->	
@@ -64,6 +46,7 @@
 				<!-- <img ng-src="{{interest.skill[0].images[2].full}}" class="img-responsive img-thumbnail"/> -->
 					
 				</a>
+				<div id="booksSlideShow">Click to Start Slideshow!</div>
 			</div>
 		</div>
 
