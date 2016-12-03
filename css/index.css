@@ -75,16 +75,9 @@ h5{
 background-image: url(../images/weather.png); 
 background-repeat: repeat;
 }
-.AboutMe{
-	background: url(../images/weather.png) no-repeat center center fixed; 
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-line-height: 13.2px;
-}
 
-#skillsPage{
+
+.SkillsPage{
 	background-image: url(../images/dark_scales.png); 
 	background-repeat: repeat; 
 }
@@ -92,14 +85,11 @@ line-height: 13.2px;
 	margin-bottom: 2%;
 }
 
-#AcademicsPage{
+.AcademicsPage,.ExperiencePage{
 	background-image: url(../images/school.png);
 	background-repeat: repeat; 
 }
-#ExperiencePage{
-	background-image: url(../images/school.png);
-	background-repeat: repeat; 
-}
+
 #underconstruction{
     color: white;
     text-shadow: 1px 1px 2px  #222222, 0 0 25px #e9ddc6, 0 0 5px #b3790b;
