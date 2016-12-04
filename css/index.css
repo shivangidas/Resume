@@ -1,199 +1,314 @@
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
-
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-image: url(../images/diagmonds.png); 
-  background-repeat: repeat;
-	color:#fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: url(../images/diagmonds.png);
+    background-repeat: repeat;
+    color: #fff;
 }
-.JumbotronPara div{
-	margin-top:-2.5%;
-	z-index: -1;
-	height: 100%;
+.JumbotronPara div {
+    margin-top: -2.5%;
+    z-index: -1;
+    height: 100%;
 }
-
-.objectivePara p{
-	padding-top:0.1%;
+.objectivePara p {
+    padding-top: 0.1%;
 }
-.contact-header-space{
-	padding-top: 10%;
+.contact-header-space {
+    padding-top: 10%;
 }
 /* Landscape phones and portrait tablets */
+
 @media (max-width: 767px) {
-	p.for-phone-alignment,p.for-copyright-alignment{
-		text-align: center;
-	}
-	body {
-  /* Margin bottom by footer height */
-  margin-bottom: 80px;
-	}
-	footer{
-		/* Set the fixed height of the footer here */
-  height: 80px;
-	}
+    p.for-phone-alignment,
+    p.for-copyright-alignment {
+        text-align: center;
+    }
+    body {
+        /* Margin bottom by footer height */
+        
+        margin-bottom: 80px;
+    }
+    footer {
+        /* Set the fixed height of the footer here */
+        
+        height: 80px;
+    }
+    .jumbotron h5 {
+        font-weight: bold;
+    }
 }
 /* others */
+
 @media (min-width: 768px) {
-p.for-phone-alignment{
-		text-align: left;
-	}
-p.for-copyright-alignment{
-		text-align: right;
-	}
-	body {
-  /* Margin bottom by footer height */
-  margin-bottom: 40px;
-	}
-	footer{
-		/* Set the fixed height of the footer here */
-  height: 40px;
-	}
+    p.for-phone-alignment {
+        text-align: left;
+    }
+    p.for-copyright-alignment {
+        text-align: right;
+    }
+    body {
+        /* Margin bottom by footer height */
+        
+        margin-bottom: 40px;
+    }
+    footer {
+        /* Set the fixed height of the footer here */
+        
+        height: 40px;
+    }
 }
-
-.skillsHeader{
-	padding-bottom: 2%;
+.skillsHeader {
+    padding-bottom: 2%;
 }
-.skillsHeader{
-	color: #fff;
+.skillsHeader {
+    color: #fff;
 }
-h2 {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: bold;
-	color: darkcyan;
+.jumbotron h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    color: darkcyan;
+    font-size: 2.5em;
 }
-h5{
-	color:#086161;
+.jumbotron h5 {
+    color: #086161;
+    font-size: 1.4em;
 }
-.jumbotron { 
-background-image: url(../images/weather.png); 
-background-repeat: repeat;
+.jumbotron {
+    background-image: url(../images/weather.png);
+    background-repeat: repeat;
 }
-
-
-.SkillsPage{
-	background-image: url(../images/dark_scales.png); 
-	background-repeat: repeat; 
+.SkillsPage {
+    background-image: url(../images/dark_scales.png);
+    background-repeat: repeat;
 }
-.forphone.col-xs-12{
-	margin-bottom: 2%;
+.forphone.col-xs-12 {
+    margin-bottom: 2%;
 }
-
-.AcademicsPage,.ExperiencePage{
-	background-image: url(../images/school.png);
-	background-repeat: repeat; 
+.AcademicsPage,
+.ExperiencePage {
+    background-image: url(../images/school.png);
+    background-repeat: repeat;
 }
-
-#underconstruction{
+#underconstruction {
     color: white;
-    text-shadow: 1px 1px 2px  #222222, 0 0 25px #e9ddc6, 0 0 5px #b3790b;
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    text-shadow: 1px 1px 2px #222222, 0 0 25px #e9ddc6, 0 0 5px #b3790b;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+    /* Safari */
+    
     transition: width 2s, height 2s, transform 2s;
-     background: -webkit-linear-gradient( #d8c299,#e9ddc6, #d2b277); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#d8c299,#e9ddc6, #d2b277); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#d8c299,#e9ddc6, #d2b277); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#d8c299,#e9ddc6, #d2b277); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient( #d8c299, #e9ddc6, #d2b277);
+    /* For Safari 5.1 to 6.0 */
+    
+    background: -o-linear-gradient(#d8c299, #e9ddc6, #d2b277);
+    /* For Opera 11.1 to 12.0 */
+    
+    background: -moz-linear-gradient(#d8c299, #e9ddc6, #d2b277);
+    /* For Firefox 3.6 to 15 */
+    
+    background: linear-gradient(#d8c299, #e9ddc6, #d2b277);
+    /* Standard syntax (must be last) */
 }
-
 #underconstruction:hover {
-	 background: -webkit-linear-gradient( #bb851f,#d4b782, #d09831); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#bb851f,#d4b782, #d09831); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#bb851f,#d4b782, #d09831); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#bb851f,#d4b782, #d09831); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient( #bb851f, #d4b782, #d09831);
+    /* For Safari 5.1 to 6.0 */
+    
+    background: -o-linear-gradient(#bb851f, #d4b782, #d09831);
+    /* For Opera 11.1 to 12.0 */
+    
+    background: -moz-linear-gradient(#bb851f, #d4b782, #d09831);
+    /* For Firefox 3.6 to 15 */
+    
+    background: linear-gradient(#bb851f, #d4b782, #d09831);
+    /* Standard syntax (must be last) */
 }
 /*Academics*/
+
 @media (min-width: 768px) {
-.parallax1 {
-    /* The image used */
-    background-image: url('../images/mainbuildingclear.png');
-
-    /* Full height */
-    height: 200px;
-    width:100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.parallax2 {
-    /* The image used */
-    background-image: url('../images/schoolbuilding.png');
-
-    /* Full height */
-    height: 200px;
-    width:100%;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+    .parallax1 {
+        /* The image used */
+        
+        background-image: url('../images/mainbuildingclear.png');
+        /* Full height */
+        
+        height: 200px;
+        width: 100%;
+        /* Create the parallax scrolling effect */
+        
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .parallax2 {
+        /* The image used */
+        
+        background-image: url('../images/schoolbuilding.png');
+        /* Full height */
+        
+        height: 200px;
+        width: 100%;
+        /* Create the parallax scrolling effect */
+        
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 @media (max-width: 767px) {
-	.parallax1 {
-    /* The image used */
-    background-image: url('../images/mainbuildingclear.png');
-
-    /* Full height */
-    height: 200px;
-    width:100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    .parallax1 {
+        /* The image used */
+        
+        background-image: url('../images/mainbuildingclear.png');
+        /* Full height */
+        
+        height: 200px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .parallax2 {
+        /* The image used */
+        
+        background-image: url('../images/schoolbuilding.png');
+        /* Full height */
+        
+        height: 200px;
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
-.parallax2 {
-    /* The image used */
-    background-image: url('../images/schoolbuilding.png');
-
-    /* Full height */
-    height: 200px;
-    background-size: 100%;
-
-    background-position: center;
-    background-repeat: no-repeat;
+.hideDiv {
+    display: none;
 }
+#collegeInfo p,
+#schoolInfo p {
+    margin: 0 0 0 0;
 }
-.hideDiv{
-	display: none;
-	}
-#collegeInfo p,#schoolInfo p{
-	margin: 0 0 0 0;
+#collegeInfo p:nth-child(3) {
+    color: #2d6079;
 }
-#collegeInfo p:nth-child(3){
-	    color: #2d6079;
+#collegeInfo p:nth-child(2) {
+    color: #0b3d56;
 }
-#collegeInfo p:nth-child(2){
-	    color: #0b3d56;
+#collegeInfo p:nth-child(1) {
+    color: #022237;
 }
-#collegeInfo p:nth-child(1){
-	    color: #022237;
+#schoolInfo p:nth-child(1) {
+    color: #2d6079;
 }
-#schoolInfo p:nth-child(1){
-	    color: #2d6079;
+#schoolInfo p:nth-child(2) {
+    color: #0b3d56;
 }
-#schoolInfo p:nth-child(2){
-	    color: #0b3d56;
+#schoolInfo p:nth-child(3) {
+    color: #022237;
 }
-#schoolInfo p:nth-child(3){
-	    color: #022237;
+#schoolInfo p:nth-child(4) {
+    color: #01151f;
 }
-#schoolInfo p:nth-child(4){
-	    color: #01151f;
+#InterestsPage p.description {
+    color: #2f6375;
+    ;
 }
-#InterestsPage p.description{
-	color:#2f6375;;
-}
-#nav_up,#nav_down {
-      color: #f3eddd;
+#nav_up,
+#nav_down {
+    color: #f3eddd;
     background-color: #e2c794;
     border-color: #815808;
 }
-/**/
-#booksSlideShow{
-  font-family: 'Fredoka One';
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 50%;
+    margin: auto;
+}
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+.carousel-control {
+    color: #337ab7;
+}
+.carousel-control:hover {
+    color: #337ab7;
+    opacity: 1;
+}
+/*Experience*/
+
+#prev_btn,
+#next_btn {
+    color: #555;
+    opacity: 0.5;
+    font-size: 20px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+#prev_btn:hover,
+#next_btn:hover {
+    opacity: 1;
+    background: -webkit-linear-gradient( #bb851f, #d4b782, #d09831);
+    /* For Safari 5.1 to 6.0 */
+    
+    background: -o-linear-gradient(#bb851f, #d4b782, #d09831);
+    /* For Opera 11.1 to 12.0 */
+    
+    background: -moz-linear-gradient(#bb851f, #d4b782, #d09831);
+    /* For Firefox 3.6 to 15 */
+    
+    background: linear-gradient(#bb851f, #d4b782, #d09831);
+    /* Standard syntax (must be last) */
+}
+#experienceBox {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: -webkit-linear-gradient( #d8c299, #e9ddc6, #d2b277);
+    /* For Safari 5.1 to 6.0 */
+    
+    background: -o-linear-gradient(#d8c299, #e9ddc6, #d2b277);
+    /* For Opera 11.1 to 12.0 */
+    
+    background: -moz-linear-gradient(#d8c299, #e9ddc6, #d2b277);
+    /* For Firefox 3.6 to 15 */
+    
+    background: linear-gradient(#d8c299, #e9ddc6, #d2b277);
+    /* Standard syntax (must be last) */
+    
+    margin: 0 auto;
+    padding: 1px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#experienceBox h3,
+#experienceBox h4 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+#experienceBox h3 {
+    font-size: 2em;
+    line-height: 0.9em;
+    color: #6b2919;
+    padding: 1em 0;
+}
+#experienceBox h4 {
+    color: #973C26;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 1.2em;
+    padding-bottom: 1em;
+}
+#experienceBox img {
+    float: right;
+    margin-left: 10px;
+    border-radius: 10px;
+    width: 100px;
+}
+#experienceBox p {
+    color: #1E3A40;
+    font-size: 1em;
+    padding-bottom: 1em;
 }

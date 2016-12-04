@@ -1,32 +1,28 @@
-{ "responsibility" : [
-  {
-    "name":"User Interface",
-    "shortname":"User_Interface",
-    "skill":"HTML5/CSS3, Bootstrap, JQuery,JSON, AngularJS, AJAX, Java",
-    "achievement":"I was responsible for the development of the user interface (UI) using HTML5/CSS3, Bootstrap, JQuery, AngularJS, AJAX and Java. The project followed Agile software development model."
-  },
-  {
-    "name":"Service Integration",
-    "shortname":"Service_Integration",
-    "skill":"Java, J2EE, Struts2 framework",
-    "achievement":"I developed codes to connect the UI to the services and Database using Java, J2EE and Struts2 framework."
-  },
-  {
-    "name":"Language Translation",
-    "shortname":"Language_Translation",
-    "skill":"Java, JQuery",
-    "achievement":"The banking application has been developed in Hebrew. This provided a wonderful opportunity to work with language translation using encoding."
-  },
-  {
-    "name":"Security",
-    "shortname":"Security",
-    "skill":"JQuery, Java, HTML5",
-    "achievement":"To secure the application, we worked on protection against the OWASP threats. I was responsible for XSS and CSRF."
-  },
-  {
-    "name":"Roles and Access",
-    "shortname":"Roles_and_Access",
-    "skill":"Sql, Java, JQuery",
-    "achievement":"I was responsible for categorising the application in order to give access to financial advisors according to their roles. I worked with the architechture team to achieve this."
-  }
-]}
+{
+  "responsibility": [{
+    "name": "User Interface",
+    "shortname": "User_Interface",
+    "skill": "HTML5/CSS3, Bootstrap, JQuery,JSON, AngularJS, AJAX, Java",
+    "achievement": "Project: Wealth Management for a bank in Israel. I was responsible for the development of the User Interface (UI) in this project at Tata Consultancy Services Ltd. The project followed Agile software development model."
+  }, {
+    "name": "Service Integration",
+    "shortname": "Service_Integration",
+    "skill": "Java, J2EE, Struts2 framework",
+    "achievement": "I developed codes to connect the UI to the services and Database."
+  }, {
+    "name": "Language Translation",
+    "shortname": "Language_Translation",
+    "skill": "Java, JQuery",
+    "achievement": "The Wealth Management application has been developed in Hebrew. This provided a wonderful opportunity to work with language translation using encoding."
+  }, {
+    "name": "Security",
+    "shortname": "Security",
+    "skill": "JQuery, Java, HTML5",
+    "achievement": "To secure the application, we worked on protection against the OWASP threats. I was responsible for XSS and CSRF."
+  }, {
+    "name": "Roles and Access",
+    "shortname": "Roles_and_Access",
+    "skill": "Sql, Java, JQuery",
+    "achievement": "I undertook the categorising of the application in order to give access to financial advisors according to their roles. It was an opportunity to work closely with the architechture team."
+  }]
+}
