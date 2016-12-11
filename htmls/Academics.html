@@ -11,13 +11,15 @@
 </head>
 
 <body class="AcademicsPage">
+    <nav class="navbar navbar-inverse">
     <navigation-div>
     </navigation-div>
+    </nav>
 
     <div class="container-fluid">
         <!-- not required on phone -->
         <div class="secondDiv">
-            <div style="right:25%;top: 50%; position:fixed; z-index:100">
+            <div style="right:10%;top: 85%; position:fixed; z-index:100">
                 <button type="button" id="nav_up" class="btn "><span class="glyphicon glyphicon-arrow-up"></span></button>
                 <button type="button" id="nav_down" class="btn "><span class="glyphicon glyphicon-arrow-down"></span></button>
             </div>
@@ -26,88 +28,88 @@
         <!-- Graduation -->
         <div class="row">
             <!-- <div class="col-xs-0 col-sm-2 col-md-3 col-lg-4">
-				<p></p>
-			</div> -->
+                <p></p>
+            </div> -->
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                <div class="parallax1"></div>
+                <div class="parallax1">
+
+                
+                <div class="" id="collegeInfo">
+                    <div id="collegePic" ></div>
+                    <div style="display:inline-block;">
+                      
+                    <p>In the year 2014, I completed my <strong>Bachelor of Engineering</strong> in <strong>Computer Science</strong> with a grade of <strong>9.07</strong>.</p>
+                    <p>University: <strong>Visvesvaraya Technological University, Belgaum</strong></p>
+                    <p>College: <strong>B.V. Bhoomaraddi College of Engineering and Technology, Hubli</strong></p>
+
+                
+                    </div>
+                
+            </div>
+            </div>
             </div>
             <!-- <div class="col-xs-0 col-sm-2 col-md-3 col-lg-4">
-				<p></p>
-			</div> -->
+                <p></p>
+            </div> -->
         </div>
         <!--  -->
-        <div class="row ">
-            <div class="col-xs-1 col-sm-2 col-md-3 col-lg-4">
-                <p></p>
-            </div>
-            <div class="col-xs-10 col-sm-8 col-md-6 col-lg-4" id="collegeInfo">
-                <center>
-                    <p>In the year 2014, I completed my <strong>Bachelor of Engineering</strong> in <strong>Computer Science</strong> with a grade of <strong>9.07</strong>.</p>
-                    <p>University: <b>Visvesvaraya Technological University, Belgaum</b></p>
-                    <p>College: <b>B.V. Bhoomaraddi College of Engineering and Technology, Hubli</b></p>
 
-                </center>
-            </div>
-            <div class="col-xs-1 col-sm-2 col-md-3 col-lg-4">
-                <p></p>
-            </div>
-        </div>
         <!-- to hide in mobile -->
         <div class="row secondDiv">
             <!-- <div class="col-xs-0 col-sm-2 col-md-3 col-lg-4">
-				<p></p>
-			</div> -->
+                <p></p>
+            </div> -->
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                 <div class="parallax1"></div>
             </div>
             <!-- <div class="col-xs-0 col-sm-2 col-md-3 col-lg-4">
-				<p></p>
-			</div> -->
+                <p></p>
+            </div> -->
         </div>
 
         <!-- School -->
         <div class="row ">
             <!-- <div class="col-xs-0 col-sm-2 col-md-3 col-lg-4">
-				<p></p>
-			</div> -->
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                <div class="parallax2"></div>
-            </div>
-            <!-- <div class="col-xs-0 col-sm-2 col-md-3 col-lg-4">
-				<p></p>
-			</div> -->
-        </div>
-        <!--  -->
-        <div class="row ">
-            <div class="col-xs-1 col-sm-2 col-md-3 col-lg-4">
                 <p></p>
-            </div>
-            <div class="col-xs-10 col-sm-8 col-md-6 col-lg-4" id="schoolInfo">
-                <center>
+            </div> -->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                <div class="parallax2">
+
+                    <div  id="schoolInfo">
+                    <div style="display:inline-block;">
+                
                     <p>A <strong>94.75%</strong> in 12th standard ensured the second rank in the state of Bihar in 2010.</p>
                     <p>In the year 2008, I scored <strong>97.2% </strong> in 10th standard.</p>
                     <p>Board: <b>Indian School Certificate (ISC),Indian Certificate For Secondary Education (ICSE)</b></p>
                     <p>School: <b>Don Bosco Academy, Patna</b></p>
 
-                </center>
-            </div>
-            <div class="col-xs-1 col-sm-2 col-md-3 col-lg-4">
+                
+                  </div>
+                <div id="schoolPic" ></div>
+              
+                
+                </div>
+                        </div>
+                        </div>
+            <!-- <div class="col-xs-0 col-sm-2 col-md-3 col-lg-4">
                 <p></p>
-            </div>
+            </div> -->
         </div>
+        <!--  -->
+
         <!-- to hide in mobile -->
         <div class="row secondDiv">
             <!-- <div class="col-xs-0 col-sm-2 col-md-3 col-lg-4">
-				<p></p>
-			</div> -->
+                <p></p>
+            </div> -->
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                 <div class="parallax2"></div>
             </div>
             <!-- <div class="col-xs-0 col-sm-2 col-md-3 col-lg-4">
-				<p></p>
-			</div> -->
+                <p></p>
+            </div> -->
         </div>
         <div class="push"></div>
 
@@ -129,6 +131,11 @@
             if (ismobile) {
                 // bypass parallax effect
                 $('.secondDiv').addClass('hideDiv');
+                $('#collegeInfo, #schoolInfo').css({
+                    "padding":"1em", "width":"100%", "margin-left":"0em"});
+                
+                $('.parallax1,.parallax2').css('margin-bottom','2em');
+
             } else {
                 var viewPortHeight = $(window).height();
                 if (viewPortHeight > 600) {

@@ -10,6 +10,11 @@ footer {
     background-repeat: repeat;
     color: #fff;
 }
+
+#emailIdLink{
+  color:white;
+  text-decoration: none;
+}
 .JumbotronPara div {
     margin-top: -2.5%;
     z-index: -1;
@@ -131,10 +136,31 @@ footer {
 /*Academics*/
 
 @media (min-width: 768px) {
+    #collegePic{
+    background-image: url(../images/mainbuildingclear.jpg);
+    height: 9em;
+    width:12em;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    box-shadow: 0px 4px 5px rgba(0,0,0,.5);
+    }
+    #schoolPic{
+        background-image: url(../images/schoolbuilding.jpg);
+        height: 9em;
+        width:12em;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        box-shadow: 0px 4px 5px rgba(0,0,0,.5);
+    }
     .parallax1 {
         /* The image used */
         
-        background-image: url('../images/mainbuildingclear.png');
+        background-image: url('../images/mainbuildingsoft.jpg');
+        
         /* Full height */
         
         height: 200px;
@@ -144,11 +170,13 @@ footer {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
     }
     .parallax2 {
         /* The image used */
         
-        background-image: url('../images/schoolbuilding.png');
+        background-image: url('../images/schoolbuildingsoft.jpg');
+        
         /* Full height */
         
         height: 200px;
@@ -158,40 +186,59 @@ footer {
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 @media (max-width: 767px) {
     .parallax1 {
         /* The image used */
         
-        background-image: url('../images/mainbuildingclear.png');
+        background-image: url('../images/mainbuildingclear-001.jpg');
         /* Full height */
         
         height: 200px;
         width: 100%;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .parallax2 {
         /* The image used */
         
-        background-image: url('../images/schoolbuilding.png');
+        background-image: url('../images/schoolbuilding-004.jpg');
         /* Full height */
         
-        height: 200px;
-        background-size: 100%;
+        height: 250px;
+        width: 100%;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 }
 .hideDiv {
     display: none;
 }
+
+#collegeInfo{
+    padding: 13em 0;
+    margin-left: 10em;
+    } 
+#schoolInfo{
+    padding: 12em 0;
+}
+
 #collegeInfo p,
 #schoolInfo p {
     margin: 0 0 0 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px #000, 0 0 25px #e4d1c9, 0 0 5px #333;
+    /*mix-blend-mode: difference;*/
 }
-#collegeInfo p:nth-child(3) {
+/*#collegeInfo p:nth-child(3) {
     color: #2d6079;
 }
 #collegeInfo p:nth-child(2) {
@@ -211,7 +258,7 @@ footer {
 }
 #schoolInfo p:nth-child(4) {
     color: #01151f;
-}
+}*/
 #InterestsPage p.description {
     color: #2f6375;
     ;
@@ -219,8 +266,8 @@ footer {
 #nav_up,
 #nav_down {
     color: #f3eddd;
-    background-color: #e2c794;
-    border-color: #815808;
+    background-color: rgba(0,0,0,.075);
+    
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
