@@ -2,7 +2,7 @@
   "responsibility": [{
     "name": "User Interface",
     "shortname": "User_Interface",
-    "skill": "HTML5/CSS3, Bootstrap, JQuery,JSON, AngularJS, AJAX, Java",
+    "skill": "HTML5/CSS3, Bootstrap, JQuery, JSON, AngularJS, AJAX, Java",
     "achievement": "Project: Wealth Management for a bank in Israel. I was responsible for the development of the User Interface (UI) in this project at Tata Consultancy Services Ltd. The project followed Agile software development model."
   }, {
     "name": "Service Integration",
@@ -23,6 +23,6 @@
     "name": "Roles and Access",
     "shortname": "Roles_and_Access",
     "skill": "Sql, Java, JQuery",
-    "achievement": "I undertook the categorising of the application in order to give access to financial advisors according to their roles. It was an opportunity to work closely with the architechture team."
+    "achievement": "I undertook categorising of the application in order to give access to financial advisors according to their roles. It was an opportunity to work closely with the architechture team."
   }]
 }
