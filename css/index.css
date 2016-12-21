@@ -6,12 +6,39 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    background-image: url(../images/diagmonds.png);
+    /*background-image: url(../images/diagmonds.png);
     background-repeat: repeat;
-    color: #fff;
+    color: #eee;*/
+    background-color: #eee;
+    color: #6e6e6e;
+    /*box-shadow: 0px 0px 4px #333;*/
+}
+body {
+        /* Margin bottom by footer height */ 
+        margin-bottom: 95px;
+        /*Margin top by nav size*/
+        margin-top: 65px;
+    }
+footer {
+        /* Set the fixed height of the footer here */
+        height: 95px;
+    }
+body > div:first-of-type{
+   box-shadow: 0px 0px 4px rgba(153, 153, 153, 0.88);
+}
+.footnote img{
+    width:4em;height:4em;display:inline-block!important;
+}
+.footnote article{
+    display:inline-block!important;
+    color: #6e6e6e;
+    font-weight: bold;
+}
+.push{
+    padding: 1em 0em;
 }
 .JumbotronPara div {
-    margin-top: -2.5%;
+    margin-top: -2em;
     z-index: -1;
     height: 100%;
 }
@@ -21,80 +48,67 @@ footer {
 .contact-header-space {
     padding-top: 10%;
 }
+.jumbotron h5 {
+   font-weight: bold;
+}
 /* Landscape phones and portrait tablets */
 
 @media (max-width: 767px) {
-    p.for-phone-alignment,
-    p.for-copyright-alignment {
-        text-align: center;
-    }
-    body {
-        /* Margin bottom by footer height */
-        
-        margin-bottom: 80px;
-    }
-    footer {
-        /* Set the fixed height of the footer here */
-        
-        height: 80px;
-    }
-    .jumbotron h5 {
-        font-weight: bold;
+    .footnote{
+        padding: 5px 0 5px 0;
     }
 }
 /* others */
 
 @media (min-width: 768px) {
-    p.for-phone-alignment {
-        text-align: left;
-    }
-    p.for-copyright-alignment {
-        text-align: right;
-    }
-    body {
-        /* Margin bottom by footer height */
-        
-        margin-bottom: 40px;
-    }
-    footer {
-        /* Set the fixed height of the footer here */
-        
-        height: 40px;
+    .footnote{
+        padding: 5px 0 5px 0;
     }
 }
 .skillsHeader {
     padding-bottom: 2%;
+    color: #086161;
 }
-.skillsHeader {
-    color: #fff;
+.progress{
+    box-shadow:inset -1px 1px 2px rgba(0,0,0,.5);
+}
+.SkillsPage .img-thumbnail{
+    transition: transform .2s ease-out;
+  transition: -ms-transform .2s ease-out;
+  -webkit-transition: -webkit-transform .2s ease-out;
+  -moz-transition: -moz-transform .2s ease-out;
+  -o-transition: -o-transform .2s ease-out;
+  box-shadow: 0px 0px 0px 1px rgba(0,0,0,.5);
+}
+.SkillsPage .img-thumbnail:hover{
+ transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
 }
 .jumbotron h2 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: normal;
     font-variant: normal;
     color: darkcyan;
-    font-size: 2.5em;
 }
 .jumbotron h5 {
     color: #086161;
-    font-size: 1.4em;
 }
 .jumbotron {
     background-image: url(../images/weather.png);
     background-repeat: repeat;
 }
-.SkillsPage {
-    background-image: url(../images/dark_scales.png);
-    background-repeat: repeat;
-}
+
 .forphone.col-xs-12 {
     margin-bottom: 2%;
 }
-.AcademicsPage,
+/*.AcademicsPage,
 .ExperiencePage {
     background-image: url(../images/school.png);
     background-repeat: repeat;
-}
+    background-color: #fcf8e3;
+}*/
 #underconstruction {
     color: white;
     text-shadow: 1px 1px 2px #222222, 0 0 25px #e9ddc6, 0 0 5px #b3790b;
@@ -131,97 +145,163 @@ footer {
 /*Academics*/
 
 @media (min-width: 768px) {
+    #collegePic{
+        background-image: url(../images/mainbuildingclear.jpg);
+        height: 9em;
+        width:22%;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+    }
+
+    #schoolPic{
+        background-image: url(../images/schoolbuilding.jpg);
+        height: 9em;
+        width:22%;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: contain;
+    }
+    .description{
+        width:75%;
+        display:inline-block;
+    }
     .parallax1 {
         /* The image used */
         
-        background-image: url('../images/mainbuildingclear.png');
+        background-image: url('../images/mainbuildingsoft.jpg');
+        
         /* Full height */
         
-        height: 200px;
+        height: 400px;
         width: 100%;
         /* Create the parallax scrolling effect */
         
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
     }
     .parallax2 {
         /* The image used */
         
-        background-image: url('../images/schoolbuilding.png');
+        background-image: url('../images/schoolbuildingsoft.jpg');
+        
         /* Full height */
         
-        height: 200px;
+        height: 400px;
         width: 100%;
         /* Create the parallax scrolling effect */
         
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #collegeInfo{
+        padding: 12em 1em;
+        } 
+    #schoolInfo{
+        padding: 12em 1em;
     }
 }
 @media (max-width: 767px) {
     .parallax1 {
         /* The image used */
         
-        background-image: url('../images/mainbuildingclear.png');
+        background-image: url('../images/mainbuildingclear-001.jpg');
         /* Full height */
         
         height: 200px;
         width: 100%;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .parallax2 {
         /* The image used */
         
-        background-image: url('../images/schoolbuilding.png');
+        background-image: url('../images/schoolbuilding-004.jpg');
         /* Full height */
         
-        height: 200px;
-        background-size: 100%;
+        height: 250px;
+        width: 100%;
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    #collegeInfo, #schoolInfo{
+        padding:1em;
+        width:100%;
+        margin-left:0em;
+    }
+                
+    .parallax1,.parallax2{
+        margin-bottom:2em;
+    }
+    .secondDiv{
+        display: none;
+    }
+}
+@media (max-width: 347px) {
+    .parallax1 {
+        height: 255px;
+        width: 100%;
+    }
+    .parallax2 {
+        
+        height: 300px;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 900px){
+    #collegePic{
+        width: 30%;
+    }
+    #schoolPic{
+        width: 30%;
+    }
+    .description{
+        width:68%;
+    }
+}
+@media screen and (min-width: 1100px){
+    #collegePic{
+        width: 35%;
+    }
+    #schoolPic{
+        width: 35%;
+    }
+    .description{
+        width:60%;
     }
 }
 .hideDiv {
     display: none;
 }
+
 #collegeInfo p,
 #schoolInfo p {
     margin: 0 0 0 0;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px #000, 0 0 25px #e4d1c9, 0 0 5px #333;
+    /*mix-blend-mode: difference;*/
 }
-#collegeInfo p:nth-child(3) {
-    color: #2d6079;
-}
-#collegeInfo p:nth-child(2) {
-    color: #0b3d56;
-}
-#collegeInfo p:nth-child(1) {
-    color: #022237;
-}
-#schoolInfo p:nth-child(1) {
-    color: #2d6079;
-}
-#schoolInfo p:nth-child(2) {
-    color: #0b3d56;
-}
-#schoolInfo p:nth-child(3) {
-    color: #022237;
-}
-#schoolInfo p:nth-child(4) {
-    color: #01151f;
-}
-#InterestsPage p.description {
-    color: #2f6375;
-    ;
+.InterestsPage p.description {
+    color: #086161;
 }
 #nav_up,
 #nav_down {
     color: #f3eddd;
-    background-color: #e2c794;
-    border-color: #815808;
+    background-color: rgba(0,0,0,.075);
+    
 }
+/********************************************************/
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
     width: 50%;
@@ -242,39 +322,31 @@ footer {
 
 #prev_btn,
 #next_btn {
-    color: #555;
+    color: #1c82da;
     opacity: 0.5;
     font-size: 20px;
     padding: 5px 10px;
     display: inline-block;
+    margin-top: 1em;
+    border:none;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
 }
 #prev_btn:hover,
 #next_btn:hover {
     opacity: 1;
-    background: -webkit-linear-gradient( #bb851f, #d4b782, #d09831);
-    /* For Safari 5.1 to 6.0 */
-    
-    background: -o-linear-gradient(#bb851f, #d4b782, #d09831);
-    /* For Opera 11.1 to 12.0 */
-    
-    background: -moz-linear-gradient(#bb851f, #d4b782, #d09831);
-    /* For Firefox 3.6 to 15 */
-    
-    background: linear-gradient(#bb851f, #d4b782, #d09831);
-    /* Standard syntax (must be last) */
 }
 #experienceBox {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background: -webkit-linear-gradient( #d8c299, #e9ddc6, #d2b277);
+    background: -webkit-linear-gradient(#adf4ed, #f5f5f5, #a8e9f3);
     /* For Safari 5.1 to 6.0 */
     
-    background: -o-linear-gradient(#d8c299, #e9ddc6, #d2b277);
+    background: -o-linear-gradient(#adf4ed, #f5f5f5, #a8e9f3);
     /* For Opera 11.1 to 12.0 */
     
-    background: -moz-linear-gradient(#d8c299, #e9ddc6, #d2b277);
+    background: -moz-linear-gradient(#adf4ed, #f5f5f5, #a8e9f3);
     /* For Firefox 3.6 to 15 */
     
-    background: linear-gradient(#d8c299, #e9ddc6, #d2b277);
+    background: linear-gradient(#adf4ed, #f5f5f5, #a8e9f3);
     /* Standard syntax (must be last) */
     
     margin: 0 auto;
@@ -289,13 +361,13 @@ footer {
     padding: 0;
 }
 #experienceBox h3 {
-    font-size: 2em;
     line-height: 0.9em;
-    color: #6b2919;
+    color: darkcyan;
     padding: 1em 0;
+    font-weight: bold;
 }
 #experienceBox h4 {
-    color: #973C26;
+    color: #116611;
     font-weight: bold;
     margin-bottom: 5px;
     line-height: 1.2em;
@@ -308,7 +380,7 @@ footer {
     width: 100px;
 }
 #experienceBox p {
-    color: #1E3A40;
-    font-size: 1em;
+    color: #073b38;
     padding-bottom: 1em;
+    font-weight: bold;
 }

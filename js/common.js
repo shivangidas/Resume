@@ -12,4 +12,7 @@ $(document).ready(function() {
         'slideshowSpeed': 7000,
         'current': ''
     });
+    if($('body').hasClass('HomePage')){
+        $('ul.nav li:eq(0)').addClass('active');
+    }
 });
