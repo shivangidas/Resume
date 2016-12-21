@@ -129,7 +129,7 @@
             name: "RWD",
             description: "Works on all sizes of your chosen device.",
             level: 90,
-            title: "Responsive Web Development",
+            title: "Responsive Web Design",
             image: "../images/rwd.png"
         }
 
