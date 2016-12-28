@@ -13,15 +13,19 @@
         description1: "I love reading.",
         description2: "",
         description3: "",
+        description4: "",
         images: [{
-            full: '../images/books.png',
-            thumb: '../images/java.png'
+            full: '../images/books1.png'
         }, {
-            full: '../images/moreBooks.png',
-            thumb: ''
+            full: '../images/books2.png'
         }, {
-            full: '../images/4books.png',
-            thumb: ''
+            full: '../images/books3.png'
+        },{
+            full: '../images/books4.png'
+        },{
+            full: '../images/kindle.png'
+        },{
+            full: '../images/books5.png'
         }]
     }, {
         name: 'Cooking',
@@ -60,7 +64,60 @@
             return this.tab === checkTab;
         };
     });
+    app.controller('StoreCompanies', function() {
+        this.company = company;
+    });
+    var company = [{
+        name: 'TCS',
+        fullname: 'TATA Consultancy Services Ltd.',
+        project: 'Wealth Management for a bank in Israel',
+        duration: '(November 2014 - Present)'
+        },
+        {
+        name: 'B.E.',
 
+        fullname: 'Final Year Project',
+        project: 'Image Encryption and Decryption',
+        duration: '(September 2013 - May 2014)',
+        language: 'Java | Cryptography',
+        complexity: 'Developed an algorithm for image encryption and decryption using chaotic maps followed by analysis',
+
+        fullname2: 'Summer Project',
+        project2: 'Android Game',
+        duration2: '(February 2013 - June 2013)',
+        language2: 'HTML5 | CSS3 | JavaScript',
+        complexity2: 'Developed a car parking game for android platform',
+
+        fullname3: 'Mini Project',
+        project3: 'Software for File Type Conversion ',
+        duration3: '(September 2012 - January 2012)',
+        language3: 'Java',
+        complexity3: 'Developed a software to convert a ﬁle in PDF to Document format and vice-versa'
+        },
+        {
+        name: 'Smart Services',
+        fullname: 'Smart Services- Highway Design, Surveying, Estimation and Cost',
+        project: 'Designing and Developing a website for a Highway Consultancy'
+        },
+        {
+        name: 'Portfolio',
+        fullname: 'A Responsive Resume',
+        project: 'Online Resume',
+        duration: '(August 2016 - Present)',
+        language: 'AngularJS | HTML5 | CSS3 | BootStrap | jQuery | Json',
+        complexity: 'Developing a website out of the technologies I learn',
+        fullname2: 'Design for a Twitter Feed',
+        project2: 'Twitter Feed',
+        duration2: '(2 days)',
+        language2: 'AngularJS | HTML5 | CSS3 | Basscss | jQuery',
+        complexity2: 'Developed a responsive Twitter Feed template.',
+        fullname3: 'Design for a Messenger App',
+        project3: 'Messenger App\'s download page',
+        duration3: '(2 days)',
+        language3: 'HTML5 | CSS3',
+        complexity3: 'Developed a demo page for a messenger app\'s download screen',
+        }
+    ];
     /*app.controller('SuggestionController',function(){
 		this.field=field;
 	});

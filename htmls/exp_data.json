@@ -2,27 +2,27 @@
   "responsibility": [{
     "name": "User Interface",
     "shortname": "User_Interface",
-    "skill": "HTML5/CSS3, Bootstrap, JQuery, JSON, AngularJS, AJAX, Java",
-    "achievement": "I was responsible for the development of the User Interface (UI) in this project at Tata Consultancy Services Ltd. The project followed Agile software development model."
+    "skill": "HTML5 | CSS3 | Bootstrap | JQuery | JSON | AngularJS | AJAX | Java",
+    "achievement": "Developed the User Interface (UI) using responsive design. The project followed Agile software development model."
   }, {
     "name": "Service Integration",
     "shortname": "Service_Integration",
-    "skill": "Java, J2EE, Struts2 framework",
-    "achievement": "I developed codes to connect the UI to the services and Database."
+    "skill": "Java | J2EE | Struts2 framework",
+    "achievement": "Developed codes to connect the UI to the services and Database."
   }, {
     "name": "Language Translation",
     "shortname": "Language_Translation",
-    "skill": "Java, JQuery",
-    "achievement": "The Wealth Management application has been developed in Hebrew. This provided a wonderful opportunity to work with language translation using encoding."
+    "skill": "Java | JQuery",
+    "achievement": "Language Translation into Hebrew using encoding."
   }, {
     "name": "Security",
     "shortname": "Security",
-    "skill": "JQuery, Java, HTML5",
-    "achievement": "To secure the application, we worked on protection against the OWASP threats. I was responsible for XSS and CSRF."
+    "skill": "JQuery | Java | HTML5",
+    "achievement": "Secured the application against the OWASP threats. Responsible for XSS and CSRF."
   }, {
     "name": "Roles and Access",
     "shortname": "Roles_and_Access",
-    "skill": "Sql, Java, JQuery",
-    "achievement": "I undertook categorising of the application in order to give access to financial advisors according to their roles. It was an opportunity to work closely with the architechture team."
+    "skill": "Sql | Java | JQuery",
+    "achievement": "Undertook categorising of the application in order to give access to financial advisors according to their roles. Worked with the architechture team to achieve it."
   }]
 }
