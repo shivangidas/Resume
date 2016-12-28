@@ -1,11 +1,10 @@
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <i class="icon-menu3" aria-hidden="true"></i>
+            <i class="icon-menu4 hidden" aria-hidden="true"></i>
             </button>
-            <a class="navbar-brand" href="index.html">Shivangi</a>
+            <a class="navbar-brand" href="AboutMe.html">Shivangi</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -20,7 +19,9 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-        if ($('body').hasClass('HomePage')) {
+        if ($('body').hasClass('AboutMePage')) {
+            $('.navbar-brand').css('color','white');
+        } else if ($('body').hasClass('HomePage')) {
             $('#myNavbar ul li:eq(0)').addClass('active');
         } else if ($('body').hasClass('ExperiencePage')) {
             $('#myNavbar ul li:eq(1)').addClass('active');
@@ -31,6 +32,15 @@
         } else if ($('body').hasClass('InterestsPage')) {
             $('#myNavbar ul li:eq(4)').addClass('active');
         }
+        $('button.navbar-toggle').click(function(){
+            $('i.icon-menu3').toggleClass('hidden');
+            if($('i.icon-menu3').hasClass('hidden')){
+                $('i.icon-menu4').removeClass('hidden');
+            }
+            else{
+                $('i.icon-menu4').addClass('hidden');
+            }
+        });
     });
 
 </script>

@@ -10,18 +10,19 @@ footer {
     background-repeat: repeat;
     color: #eee;*/
     background-color: #eee;
-    color: #6e6e6e;
+    color: rgba(0, 0, 0, 0.55);
     /*box-shadow: 0px 0px 4px #333;*/
 }
 body {
+        color: #777;
         /* Margin bottom by footer height */ 
-        margin-bottom: 95px;
+        margin-bottom: 119px;
         /*Margin top by nav size*/
         margin-top: 65px;
     }
 footer {
         /* Set the fixed height of the footer here */
-        height: 95px;
+        height: 119px;
     }
 body > div:first-of-type{
    box-shadow: 0px 0px 4px rgba(153, 153, 153, 0.88);
@@ -34,8 +35,40 @@ body > div:first-of-type{
     color: #6e6e6e;
     font-weight: bold;
 }
+#copyright{
+    font-size:0.7em;padding-top: 10px;
+}
+#contactIcons a{
+    padding: 0em 0.3em;
+    font-size:1.5em;
+    color:rgba(110, 110, 110, 0.71);
+}
+#contactIcons a#emailId i:hover{
+    color:#d54a3d;
+}
+#contactIcons a#linkedIn i:hover{
+    color:#007BB6;
+}
+#contactIcons a#github i:hover{
+    color:#444444;
+}
+#contactIcons a#facebook i:hover{
+    color:#3B5998;
+}
+#contactIcons a#twitter i:hover{
+    color:#1da1f2;
+}
+#contactIcons a#blogger i:hover{
+    color:#ff5722;
+}
 .push{
     padding: 1em 0em;
+}
+.icon-menu3, .icon-menu4{
+    font-size: 20px;
+}
+.navbar-toggle{
+    padding: 5px 5px;
 }
 .JumbotronPara div {
     margin-top: -2em;
@@ -51,23 +84,27 @@ body > div:first-of-type{
 .jumbotron h5 {
    font-weight: bold;
 }
+.footnote{
+        padding: 5px 0 5px 0;
+}
+
 /* Landscape phones and portrait tablets */
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
     .footnote{
         padding: 5px 0 5px 0;
     }
-}
+}*/
 /* others */
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .footnote{
         padding: 5px 0 5px 0;
     }
-}
+}*/
 .skillsHeader {
     padding-bottom: 2%;
-    color: #086161;
+    color: rgba(0, 139, 139, 0.77);;
 }
 .progress{
     box-shadow:inset -1px 1px 2px rgba(0,0,0,.5);
@@ -103,49 +140,10 @@ body > div:first-of-type{
 .forphone.col-xs-12 {
     margin-bottom: 2%;
 }
-/*.AcademicsPage,
-.ExperiencePage {
-    background-image: url(../images/school.png);
-    background-repeat: repeat;
-    background-color: #fcf8e3;
-}*/
-#underconstruction {
-    color: white;
-    text-shadow: 1px 1px 2px #222222, 0 0 25px #e9ddc6, 0 0 5px #b3790b;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
-    /* Safari */
-    
-    transition: width 2s, height 2s, transform 2s;
-    background: -webkit-linear-gradient( #d8c299, #e9ddc6, #d2b277);
-    /* For Safari 5.1 to 6.0 */
-    
-    background: -o-linear-gradient(#d8c299, #e9ddc6, #d2b277);
-    /* For Opera 11.1 to 12.0 */
-    
-    background: -moz-linear-gradient(#d8c299, #e9ddc6, #d2b277);
-    /* For Firefox 3.6 to 15 */
-    
-    background: linear-gradient(#d8c299, #e9ddc6, #d2b277);
-    /* Standard syntax (must be last) */
-}
-#underconstruction:hover {
-    background: -webkit-linear-gradient( #bb851f, #d4b782, #d09831);
-    /* For Safari 5.1 to 6.0 */
-    
-    background: -o-linear-gradient(#bb851f, #d4b782, #d09831);
-    /* For Opera 11.1 to 12.0 */
-    
-    background: -moz-linear-gradient(#bb851f, #d4b782, #d09831);
-    /* For Firefox 3.6 to 15 */
-    
-    background: linear-gradient(#bb851f, #d4b782, #d09831);
-    /* Standard syntax (must be last) */
-}
 /*Academics*/
 
 @media (min-width: 768px) {
-    #collegePic{
+    /*#collegePic{
         background-image: url(../images/mainbuildingclear.jpg);
         height: 9em;
         width:22%;
@@ -163,7 +161,7 @@ body > div:first-of-type{
         background-repeat: no-repeat;
         background-position: left;
         background-size: contain;
-    }
+    }*/
     .description{
         width:75%;
         display:inline-block;
@@ -175,7 +173,23 @@ body > div:first-of-type{
         
         /* Full height */
         
-        height: 400px;
+        height: 200px;
+        width: 100%;
+        /* Create the parallax scrolling effect */
+        
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax12{
+        /* The image used */
+        
+        background-image: url('../images/mainbuildingclear.jpg');
+        
+        /* Full height */
+        
+        height: 600px;
         width: 100%;
         /* Create the parallax scrolling effect */
         
@@ -191,7 +205,23 @@ body > div:first-of-type{
         
         /* Full height */
         
-        height: 400px;
+        height: 200px;
+        width: 100%;
+        /* Create the parallax scrolling effect */
+        
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax22 {
+        /* The image used */
+        
+        background-image: url('../images/schoolbuilding.jpg');
+        
+        /* Full height */
+        
+        height: 600px;
         width: 100%;
         /* Create the parallax scrolling effect */
         
@@ -201,10 +231,10 @@ body > div:first-of-type{
         background-size: cover;
     }
     #collegeInfo{
-        padding: 12em 1em;
+        padding: 5em 1em;
         } 
     #schoolInfo{
-        padding: 12em 1em;
+        padding: 5em 1em;
     }
 }
 @media (max-width: 767px) {
@@ -246,6 +276,9 @@ body > div:first-of-type{
     .secondDiv{
         display: none;
     }
+    .responsibility{
+        padding: 0.5em 1em !important;
+    }
 }
 @media (max-width: 347px) {
     .parallax1 {
@@ -256,6 +289,13 @@ body > div:first-of-type{
         
         height: 300px;
         width: 100%;
+    }
+    #contactIcons a{
+    padding: 0em 0.2em;
+    font-size:1.2em;
+    }
+    #copyright{
+        font-size: 0.6em;
     }
 }
 @media screen and (min-width: 900px){
@@ -293,13 +333,20 @@ body > div:first-of-type{
     /*mix-blend-mode: difference;*/
 }
 .InterestsPage p.description {
-    color: #086161;
+    color: rgba(28, 105, 101, 0.77);
+}
+.InterestsPage .item p.description {
+    color: lightgrey;
 }
 #nav_up,
 #nav_down {
-    color: #f3eddd;
-    background-color: rgba(0,0,0,.075);
-    
+    color: #4691d2;
+    background-color: rgba(0,0,0,.075);    
+}
+#nav_up:hover,
+#nav_down:hover {
+    color: #1a77c8;
+    border-style: none;    
 }
 /********************************************************/
 .carousel-inner > .item > img,
@@ -320,7 +367,7 @@ body > div:first-of-type{
 }
 /*Experience*/
 
-#prev_btn,
+/*#prev_btn,
 #next_btn {
     color: #1c82da;
     opacity: 0.5;
@@ -334,53 +381,48 @@ body > div:first-of-type{
 #prev_btn:hover,
 #next_btn:hover {
     opacity: 1;
-}
-#experienceBox {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background: -webkit-linear-gradient(#adf4ed, #f5f5f5, #a8e9f3);
-    /* For Safari 5.1 to 6.0 */
-    
-    background: -o-linear-gradient(#adf4ed, #f5f5f5, #a8e9f3);
-    /* For Opera 11.1 to 12.0 */
-    
-    background: -moz-linear-gradient(#adf4ed, #f5f5f5, #a8e9f3);
-    /* For Firefox 3.6 to 15 */
-    
-    background: linear-gradient(#adf4ed, #f5f5f5, #a8e9f3);
-    /* Standard syntax (must be last) */
-    
+}*/
+.responsibility {
+    box-shadow: -5px 1px 8px 0 rgba(0, 0, 0, 0.2), -1px 4px 6px 0 rgba(0, 0, 0, 0.19);    
     margin: 0 auto;
-    padding: 1px 20px;
-    border-radius: 10px;
-    overflow: hidden;
+    padding: 1em 1em;
+
 }
-#experienceBox h3,
-#experienceBox h4 {
+.responsibilityDes{
+    box-shadow: 4px 1px 8px 0 rgba(0, 0, 0, 0.2), 2px 4px 6px 0 rgba(0, 0, 0, 0.19);
+     margin: 0 auto;
+    padding: 1em 1em; 
+}
+.responsibility h4,
+.responsibilityDes h5 {
     font-weight: normal;
     margin: 0;
     padding: 0;
 }
-#experienceBox h3 {
+.responsibility h4 {
     line-height: 0.9em;
-    color: darkcyan;
+    color: rgba(0, 139, 139, 0.77);
     padding: 1em 0;
     font-weight: bold;
 }
-#experienceBox h4 {
-    color: #116611;
+.responsibilityDes h5 {
+    color: rgba(17, 102, 17, 0.81);
     font-weight: bold;
     margin-bottom: 5px;
     line-height: 1.2em;
     padding-bottom: 1em;
 }
-#experienceBox img {
+/*#experienceBox img {
     float: right;
     margin-left: 10px;
     border-radius: 10px;
     width: 100px;
-}
-#experienceBox p {
-    color: #073b38;
+}*/
+.responsibilityDes p {
+    color: rgba(28, 105, 101, 0.77);
     padding-bottom: 1em;
     font-weight: bold;
+}
+.panel{
+    box-shadow: none;
 }
