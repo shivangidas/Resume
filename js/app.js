@@ -116,6 +116,11 @@
         duration3: '(2 days)',
         language3: 'HTML5 | CSS3',
         complexity3: 'Developed a demo page for a messenger app\'s download screen',
+        fullname4: 'My work on codepen',
+        project4: 'Few fun projects on codepen',
+        duration4: '(Whenever I get time)',
+        language4: 'HTML5 | CSS3 | jQuery',
+        complexity4: 'Designing and developing small projects using 3D animations, APIs, etc.'
         }
     ];
     /*app.controller('SuggestionController',function(){
