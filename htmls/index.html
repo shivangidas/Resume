@@ -15,9 +15,9 @@
     </navigation-div>
     </nav>
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="box-shadow:none;padding:0;">
        <section class="hero">
-          <div class="row intro">
+          <div class="intro">
             <div class="columns">
               <div class="my-img"></div>
               <h1>Shivangi Das</h1>
@@ -25,11 +25,15 @@
             <div class="columns">
               <h2>Web Developer &middot; Loves Books</h2>
             </div>
-            <div class="portfolio"><a href="http://www.myexperiments.in/Experience.html">Go to my portfolio</a></div>
+            <div class="portfolio"><a href="http://www.myexperiments.in/Experience.html">
+                <button class="btn btn-success">Go to my portfolio</button>
+             </a>
+            </div>
           </div>
           
         </section>
     </div>
+
     <footer class="container-fluid" text-center">
         <footer-div></footer-div>
     </footer>
@@ -43,9 +47,14 @@
     $(document).ready(function() {
         "use strict";
             var viewportHeight = $(window).height();
-            if (viewportHeight > 600) {
-                $('#pictureDiv').css('margin-top', viewportHeight / 2 - 300);
-            }
+            var bg = $(".hero");
+
+        function resizeBackground() {
+            bg.height(viewportHeight);
+        }
+
+        $(window).resize(resizeBackground);
+        resizeBackground();
     });
 </script>
 </body>

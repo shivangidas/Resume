@@ -120,7 +120,12 @@
         project4: 'Few fun projects on codepen',
         duration4: '(Whenever I get time)',
         language4: 'HTML5 | CSS3 | jQuery',
-        complexity4: 'Designing and developing small projects using 3D animations, APIs, etc.'
+        complexity4: 'Designing and developing small projects using 3D animations, APIs, etc.',
+        fullname5: 'Into the 3rd Dimension',
+        project5: 'A 3D page',
+        duration5: '(One fine night)',
+        language5: 'HTML5 | CSS3 | jQuery',
+        complexity5: 'Developed a simple, 3-dimensional interactive page.'
         }
     ];
     /*app.controller('SuggestionController',function(){

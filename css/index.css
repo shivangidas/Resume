@@ -20,6 +20,9 @@ body {
         /*Margin top by nav size*/
         margin-top: 65px;
     }
+.HomePage{
+    margin-top: 0px;
+}
 footer {
         /* Set the fixed height of the footer here */
         height: 119px;
@@ -34,6 +37,7 @@ body > div:first-of-type{
     display:inline-block!important;
     color: #6e6e6e;
     font-weight: bold;
+    line-height: 3em;
 }
 #copyright{
     font-size:0.7em;padding-top: 10px;
@@ -73,20 +77,14 @@ body > div:first-of-type{
 .navbar-toggle{
     padding: 5px 5px;
 }
-.JumbotronPara div {
-    margin-top: -2em;
-    z-index: -1;
-    height: 100%;
-}
+
 .objectivePara p {
     padding-top: 0.1%;
 }
 .contact-header-space {
     padding-top: 10%;
 }
-.jumbotron h5 {
-   font-weight: bold;
-}
+
 .footnote{
         padding: 5px 0 5px 0;
 }
@@ -127,7 +125,7 @@ body > div:first-of-type{
   -o-transform: scale(1.2);
   -ms-transform: scale(1.2);
 }
-.jumbotron h2 {
+/*.jumbotron h2 {
     font-style: normal;
     font-variant: normal;
     color: darkcyan;
@@ -138,7 +136,7 @@ body > div:first-of-type{
 .jumbotron {
     background-image: url(../images/weather.png);
     background-repeat: repeat;
-}
+}*/
 
 .forphone.col-xs-12 {
     margin-bottom: 2%;
@@ -431,9 +429,9 @@ body > div:first-of-type{
 }
 /*new hero image */
 .hero {
-  background: url("../images/hero_image.jpg") no-repeat center center;
+  background: url("https://github.com/shivangidas/images-for-codepen/blob/master/IMG_20170204_131511872.jpg?raw=true") no-repeat center center;
   background-size: cover;
-  height: 100vh; }
+   }
   .hero:before {
     content: '';
     position: absolute;
@@ -450,18 +448,16 @@ body > div:first-of-type{
     transform: translateY(-50%); }
   .hero h1 {
     color: #fff;
-    font-size: 1.5em;
-    line-height: 1.5em;
+    font-size: 2em;
     letter-spacing: -0.025em;
     font-weight: 300;
     text-align: center; }
   .hero h2 {
     color: #fff;
-    font-size: 1.1em;
-    line-height: 1.1em;
+    font-size: 1.3em;
     font-weight: 200;
     text-align: center;
-    margin-bottom: 2em; }
+    margin-bottom: 1em; }
   .hero .my-img {
     background: url("../images/image6.jpg") no-repeat center center;
     background-size: cover;
@@ -477,8 +473,7 @@ body > div:first-of-type{
     .hero h1 {
       font-size: 2.5em; }
     .hero h2 {
-          font-size: 1.5em; 
-          line-height: 1.5em;
+          font-size: 1.5em;
       }
      }
 .hero .portfolio{
